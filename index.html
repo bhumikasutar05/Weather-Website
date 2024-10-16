@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Website</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container-main">
+      <article>
+        <aside class="a1 demo">
+          <h1 class="display-data">WEATHER DATA</h1>
+          <hr />
+        </aside>
+
+        <aside class="a2 demo">
+          <input
+            type="text"
+            name="location"
+            id="location"
+            placeholder="Enter Location"
+          />
+          <button type="button" class="btn">Search</button>
+        </aside>
+
+        <aside class="a3 demo inactive">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/024/825/193/non_2x/3d-weather-icon-day-with-rain-free-png.png"
+            alt="img-1"
+            id="icon"
+          />
+          <h1 class="display-temp">30°C</h1>
+          <p class="display-location">Location : London</p>
+        </aside>
+
+        <aside class="a4 demo inactive">
+          <div>
+            <p><i class="fa-solid fa-wind"></i>Wind Speed :</p>
+            <p class="display-speed">2.5km/hr</p>
+          </div>
+
+          <div>
+            <p>Humidity :</p>
+            <p class="display-humidity">18%</p>
+          </div>
+        </aside>
+      </article>
+    </div>
+    <script src="./App.js"></script>
+  </body>
+</html>

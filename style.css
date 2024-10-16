@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+.container-main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-main > article {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: linear-gradient(135deg, #1f1c2c, #928dab, #fdcb6e);
+  /* border: 1px solid black; */
+  box-shadow: 5px 5px 8px #928dab;
+  border-radius: 10px;
+  transition: background-color 0.5s ease;
+}
+
+.a1 {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.a1 > h1 {
+  font-size: 25px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.a1 > hr {
+  border: none;
+  height: 2px;
+  background: #fff;
+}
+
+.a2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.a2 > input {
+  padding: 10px 20px;
+  outline: none;
+  border: 1px solid rgb(171, 171, 171);
+  border-radius: 5px;
+  width: 250px;
+}
+
+.a2 > button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #111;
+  color: #fff;
+  border: none;
+}
+
+.a3 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.a3 > img {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+}
+
+.a3 > h1 {
+  font-size: 100px;
+  color: #fff;
+}
+
+.a3 > p {
+  font-size: 30px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.a4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.a4 > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.a4 > div > p {
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Responsive */
+/* Small screens (mobile devices) */
+@media screen and (max-width: 600px) {
+  article {
+    padding: 10px;
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Medium screens (tablets) */
+@media screen and (min-width: 601px) and (max-width: 992px) {
+  article {
+    padding: 15px;
+    font-size: 1rem;
+  }
+}
+
+/* Large screens (desktops) */
+@media screen and (min-width: 993px) {
+  article {
+    padding: 20px;
+    font-size: 1.2rem;
+  }
+}
